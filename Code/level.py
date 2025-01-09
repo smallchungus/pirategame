@@ -1,8 +1,8 @@
 from settings import *
-from sprites import Sprite
+from sprite import Sprite
 
 class Level:
-    def __init__(self):
+    def __init__(self, tmx_map):
         self.display_surface = pygame.display.get_surface()
 
         self.all_sprites = pygame.sprite.Group()
